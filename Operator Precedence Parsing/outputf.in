@@ -1,0 +1,46 @@
+
+ Leading(A) 
+E --- ( * + i  
+F --- ( i  
+T --- ( * i  
+ Trailing(A) 
+E --- ) * + i  
+F --- ) i  
+T --- ) * i  
+ Table Entries Are : 
+ 	$	(	)	*	+	i	
+$: 	 	<	 	<	<	<	
+(: 	 	<	=	<	<	<	
+): 	>	 	>	>	>	 	
+*: 	>	<	>	>	>	<	
++: 	>	<	>	<	>	<	
+i: 	>	 	>	>	>	 	
+ Input String : i+(i+i)+(i*i)$
+ parsing string ... i+(i+i)+(i*i)$
+$		i+(i+i)+(i*i)$
+$i		+(i+i)+(i*i)$
+$F		+(i+i)+(i*i)$
+$F+		(i+i)+(i*i)$
+$F+(		i+i)+(i*i)$
+$F+(i		+i)+(i*i)$
+$F+(F		+i)+(i*i)$
+$F+(F+		i)+(i*i)$
+$F+(F+i		)+(i*i)$
+$F+(F+F		)+(i*i)$
+$F+(E		)+(i*i)$
+$F+(E)		+(i*i)$
+$F+E		+(i*i)$
+$E		+(i*i)$
+$E+		(i*i)$
+$E+(		i*i)$
+$E+(i		*i)$
+$E+(F		*i)$
+$E+(F*		i)$
+$E+(F*i		)$
+$E+(F*F		)$
+$E+(E		)$
+$E+(E)		$
+$E+E		$
+$E		$
+
+ Accepted 
