@@ -1,0 +1,56 @@
+// FOR SIMPLE PRECEDENCE PARSING
+
+3 S T R
+5 , ^ ( ) a
+a ^ (R) #
+S,T S #
+T # 
+
+(a,a)$
+
+// FOR FIRST
+
+3 S A B
+2 a b
+AB #
+a epsilon #
+b epsilon #
+
+
+
+// FOR FIRST
+
+5 E G T H F
+5 + * i ( )
+TG #
++TG epsilon #
+FH #
+*FH epsilon #
+(E) i #
+
+
+
+
+// FOR OPERATOR PRECEDENCE PARSING
+
+3 E T F
+5 + * ( ) i
+E+T T #
+T*F F #
+(E) i #
+
+i+(i+i)+(i*i)$
+
+
+
+// FOR OPERATOR PRECEDENCE PARSING
+( Not Suitable )
+
+1 S
+2 a b 
+aSbS bSaS #
+
+
+
+
+
