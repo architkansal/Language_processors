@@ -1,46 +1,48 @@
 
- Leading(A) 
-E --- ( * + i  
-F --- ( i  
-T --- ( * i  
- Trailing(A) 
-E --- ) * + i  
-F --- ) i  
-T --- ) * i  
+ Calculating first ... 
+
+ First(A) 
+R --- ( ^ a  
+S --- ( ^ a  
+T --- ( ^ a  
+
+ Calculating Derive(s) ... 
+
+ Derives(A) 
+R --- ( S T ^ a  
+S --- ( ^ a  
+T --- ( S ^ a  
+
+ Calculating Derives_Backward(s) ... 
+
+ Derives_Back(A) 
+R --- ) S T ^ a  
+S --- ) ^ a  
+T --- ) S T ^ a  
  Table Entries Are : 
- 	$	(	)	*	+	i	
-$: 	 	<	 	<	<	<	
-(: 	 	<	=	<	<	<	
-): 	>	 	>	>	>	 	
-*: 	>	<	>	>	>	<	
-+: 	>	<	>	<	>	<	
-i: 	>	 	>	>	>	 	
- Input String : i+(i+i)+(i*i)$
- parsing string ... i+(i+i)+(i*i)$
-$		i+(i+i)+(i*i)$
-$i		+(i+i)+(i*i)$
-$F		+(i+i)+(i*i)$
-$F+		(i+i)+(i*i)$
-$F+(		i+i)+(i*i)$
-$F+(i		+i)+(i*i)$
-$F+(F		+i)+(i*i)$
-$F+(F+		i)+(i*i)$
-$F+(F+i		)+(i*i)$
-$F+(F+F		)+(i*i)$
-$F+(E		)+(i*i)$
-$F+(E)		+(i*i)$
-$F+E		+(i*i)$
-$E		+(i*i)$
-$E+		(i*i)$
-$E+(		i*i)$
-$E+(i		*i)$
-$E+(F		*i)$
-$E+(F*		i)$
-$E+(F*i		)$
-$E+(F*F		)$
-$E+(E		)$
-$E+(E)		$
-$E+E		$
-$E		$
+ 	R	S	T	a	^	,	(	)	$	
+R: 	 	 	 	 	 	 	 	=	 	
+S: 	 	 	 	 	 	=	 	>	 	
+T: 	 	 	 	 	 	 	 	>	 	
+a: 	 	 	 	 	 	>	 	>	>	
+^: 	 	 	 	 	 	>	 	>	>	
+,: 	 	<	=	<	<	 	<	 	 	
+(: 	=	<	<	<	<	 	<	 	 	
+): 	 	 	 	 	 	>	 	>	>	
+$: 	 	 	 	<	<	 	<	 	 	
+ Input String : (a,a)$
+ parsing string ... (a,a)$
+$		(a,a)$
+$(		a,a)$
+$(a		,a)$
+$(S		,a)$
+$(S,		a)$
+$(S,a		)$
+$(S,S		)$
+$(S,T		)$
+$(T		)$
+$(R		)$
+$(R)		$
+$S		$
 
  Accepted 
